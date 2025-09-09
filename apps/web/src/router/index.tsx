@@ -2,6 +2,7 @@ import { createBrowserRouter, Navigate } from 'react-router-dom';
 import { AppLayout } from '@/components/layout/AppLayout';
 import { TodoPage } from '@/components/common/TodoPage';
 import { DashboardOverview } from '@/views/dashboard/Overview';
+import { Topology } from '@/views/dashboard/topology/Topology';
 
 export const router = createBrowserRouter([
   {
@@ -19,7 +20,7 @@ export const router = createBrowserRouter([
       },
       {
         path: 'dashboard/topology',
-        element: <TodoPage title="网络拓扑" description="网络拓扑展示页面" />
+        element: <Topology />
       },
       {
         path: 'dashboard/monitoring',

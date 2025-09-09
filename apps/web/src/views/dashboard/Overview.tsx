@@ -150,7 +150,7 @@ export function DashboardOverview() {
   };
 
   return (
-    <div className="space-y-6">
+    <div className="absolute inset-0 overflow-auto p-6 space-y-6 scrollbar-thin">
       {/* 页面标题 */}
       <div className="flex items-center justify-between">
         <div>
