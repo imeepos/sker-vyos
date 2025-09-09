@@ -4,6 +4,7 @@ import { TodoPage } from '@/components/common/TodoPage';
 import { DashboardOverview } from '@/views/dashboard/Overview';
 import { Topology } from '@/views/dashboard/topology/Topology';
 import MonitoringPage from '@/views/dashboard/Monitoring';
+import { DashboardAlerts } from '@/views/dashboard/Alerts';
 
 export const router = createBrowserRouter([
   {
@@ -29,7 +30,7 @@ export const router = createBrowserRouter([
       },
       {
         path: 'dashboard/alerts',
-        element: <TodoPage title="告警中心" description="告警中心页面" />
+        element: <DashboardAlerts />
       },
       {
         path: 'dashboard/performance',
