@@ -1,6 +1,7 @@
 import { createBrowserRouter, Navigate } from 'react-router-dom';
 import { AppLayout } from '@/components/layout/AppLayout';
 import { TodoPage } from '@/components/common/TodoPage';
+import { DashboardOverview } from '@/views/dashboard/Overview';
 
 export const router = createBrowserRouter([
   {
@@ -14,7 +15,7 @@ export const router = createBrowserRouter([
       // Dashboard routes
       {
         path: 'dashboard/overview',
-        element: <TodoPage title="综合概览" description="仪表板综合概览页面" />
+        element: <DashboardOverview />
       },
       {
         path: 'dashboard/topology',
