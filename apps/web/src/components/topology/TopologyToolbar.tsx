@@ -219,7 +219,7 @@ export const TopologyToolbar: React.FC<TopologyToolbarProps> = ({
         <div className="flex items-center space-x-2">
           <Badge
             variant={viewOptions.autoRefresh ? 'default' : 'secondary'}
-            className="text-xs"
+            className="text-xs text-gray"
           >
             {viewOptions.autoRefresh ? '自动刷新' : '手动刷新'}
           </Badge>

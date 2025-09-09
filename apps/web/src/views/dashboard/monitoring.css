@@ -1,0 +1,49 @@
+/* Custom scrollbar styles for monitoring page */
+.monitoring-container {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(100, 116, 139, 0.5) rgba(30, 41, 59, 0.3);
+}
+
+.monitoring-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.monitoring-container::-webkit-scrollbar-track {
+  background: rgba(30, 41, 59, 0.3);
+  border-radius: 4px;
+}
+
+.monitoring-container::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.5);
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.monitoring-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.7);
+}
+
+/* Glowing effect for metric cards */
+.metric-card-glow {
+  position: relative;
+}
+
+.metric-card-glow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(45deg, transparent, rgba(59, 130, 246, 0.3), transparent);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: subtract;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.metric-card-glow:hover::before {
+  opacity: 1;
+}

@@ -3,6 +3,7 @@ import { AppLayout } from '@/components/layout/AppLayout';
 import { TodoPage } from '@/components/common/TodoPage';
 import { DashboardOverview } from '@/views/dashboard/Overview';
 import { Topology } from '@/views/dashboard/topology/Topology';
+import MonitoringPage from '@/views/dashboard/Monitoring';
 
 export const router = createBrowserRouter([
   {
@@ -24,7 +25,7 @@ export const router = createBrowserRouter([
       },
       {
         path: 'dashboard/monitoring',
-        element: <TodoPage title="实时监控" description="实时监控页面" />
+        element: <MonitoringPage />
       },
       {
         path: 'dashboard/alerts',
